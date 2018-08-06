@@ -1,0 +1,35 @@
+included:
+  - shimakaze
+
+excluded:
+  - Carthage
+  - Pods
+
+disabled_rules:
+  - cyclomatic_complexity
+  - file_length
+  - function_body_length
+  - line_length
+  - mark
+  - nesting
+  - todo
+  - trailing_comma
+  - type_name
+  - variable_name
+
+opt_in_rules:
+  - closure_spacing
+  - conditional_returns_on_newline
+  - overridden_super_call
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - switch_case_on_newline
+
+line_length: 360
+
+type_body_length:
+  - 400 # warning
+  - 500 # error
+
+trailing_whitespace:
+  ignores_empty_lines: true
