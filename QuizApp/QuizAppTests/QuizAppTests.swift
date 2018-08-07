@@ -21,9 +21,12 @@ class QuizAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLabelTitle() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyBoard.instantiateInitialViewController() as! ViewController
+        let _ = viewController.view
+        
+        XCTAssertEqual(viewController.label!.text!, "Hello World.")
     }
     
     func testPerformanceExample() {
